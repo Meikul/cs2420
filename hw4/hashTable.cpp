@@ -53,22 +53,18 @@ Item* HashTable::find(int key)
 
 bool HashTable::insert(int key, string data)
 {
-  Item insItem(key, data);
-  return insert(insItem);
-}
-
-bool HashTable::insert(Item item)
-{
   if(itemCount >= table.size()/2)
     rehash();
   itemCount++;
-  int probe = hash(item.key);
+  int probe = hash(key);
   while(true)
   {
-    Item* probeItem = probeItem;
+    Item probeItem = table[probe];
     if(probeItem == nullptr)
     {
-      probeItem = &item;
+      cout << "probe null" << endl;
+      table[probe] = new Item(key, data);
+      cout << table[probe]->name << endl;
       return true;
     }
     else
@@ -77,7 +73,7 @@ bool HashTable::insert(Item item)
       {
         if(probeItem->isDeleted)
         {
-          probeItem = &item;
+          table[probe] = &item;
           return true;
         }
         else
@@ -89,6 +85,41 @@ bool HashTable::insert(Item item)
     probe = hash(probe);
   }
 }
+
+// bool HashTable::insert(Item item)
+// {
+//   if(itemCount >= table.size()/2)
+//     rehash();
+//   itemCount++;
+//   int probe = hash(item.key);
+//   while(true)
+//   {
+//     Item* probeItem = table[probe];
+//     if(probeItem == nullptr)
+//     {
+//       cout << "probe null" << endl;
+//       table[probe] = new Item(key, data);
+//       cout << table[probe]->name << endl;
+//       return true;
+//     }
+//     else
+//     {
+//       if(item.key == probeItem->key)
+//       {
+//         if(probeItem->isDeleted)
+//         {
+//           table[probe] = &item;
+//           return true;
+//         }
+//         else
+//         {
+//           return false;
+//         }
+//       }
+//     }
+//     probe = hash(probe);
+//   }
+// }
 
 void HashTable::remove(int key)
 {

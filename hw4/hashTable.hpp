@@ -20,7 +20,7 @@ class HashTable
 {
 private:
   int hash(int key);
-  vector<Item*> table;
+  vector<Item> table;
   unsigned int itemCount;
 
 public:
