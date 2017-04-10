@@ -1,8 +1,0 @@
-TODO
-
-Table pointers -> objects
-  Find
-  remove
-  insert
-  rehash
-  printTable

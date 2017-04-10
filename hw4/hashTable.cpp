@@ -52,7 +52,9 @@ Item HashTable::find(int key)
     if(item.key == key)
     {
       if(item.isDeleted)
+      {
         return nullItem();
+      }
       return item;
     }
     checkKey = hash(checkKey);
@@ -63,7 +65,7 @@ Item HashTable::find(int key)
 
 bool HashTable::insert(int key, string data)
 {
-  if(itemCount >= table.size()/2)
+  if(itemCount >= (table.size()/2)-1)
     rehash();
   itemCount++;
   Item item(key, data);
