@@ -23,7 +23,8 @@ isDeleted(d)
 
 HashTable::HashTable()
 {
-  table.resize(10);
+  for(unsigned int i=0; i<10; i++)
+    table.push_back(nullItem());
   itemCount=0;
   for (unsigned int i=0; i<table.size(); i++)
   {
@@ -33,7 +34,8 @@ HashTable::HashTable()
 
 Item HashTable::nullItem()
 {
-  return nullItem();
+  Item obj(0, "No Item", false);
+  return obj;
 }
 
 int HashTable::hash(int key)
@@ -72,7 +74,6 @@ bool HashTable::insert(int key, string data)
     if(probeItem.key == 0)
     {
       table[probe] = item;
-      cout << table[probe].name << endl;
       return true;
     }
     else
@@ -138,7 +139,7 @@ void HashTable::remove(int key)
   while(probeItem.key != 0)
   {
     if(probeItem.key == key){
-      probeItem.isDeleted = true;
+      table[probeKey].isDeleted = true;
       return;
     }
     probeKey = hash(probeKey);
@@ -160,10 +161,9 @@ void HashTable::rehash()
 {
   vector<int> hashedKeys(itemCount, -1);
   unsigned int size = table.size();
-  table.resize(size*2);
-  for (unsigned int i=size; i<size*2; i++)
+  for (unsigned int i=0; i<size; i++)
   {
-    table[i] = nullItem();
+    table.push_back(nullItem());
   }
   unsigned int itemsHashed=0;
   for(unsigned int i=0; i<size && itemsHashed<itemCount; i++)
@@ -199,7 +199,8 @@ void HashTable::printTable()
     }
     else
     {
-      cout << "0, No Item, 1\n";
+      cout << "0, No Item, 0\n";
     }
   }
+  cout << endl;
 }

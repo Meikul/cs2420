@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include "hashTable.hpp"
-#include "hashTable.cpp"
-
 using namespace std;
 
 int toInt(string str);
@@ -10,19 +8,17 @@ int toInt(string str);
 int main()
 {
   HashTable inventory;
-  string keyString;
-  string word;
-  ifstream fruitFile("fruit.csv");
   inventory.printTable();
-  inventory.insert(20, "Apples");
-  inventory.insert(30, "Mini Bananas");
-  inventory.insert(14, "Durian");
-  inventory.insert(2, "Beets");
-  // for (unsigned int i=0; (i<20)&&(getline(fruitFile, keyString, ','))&&(getline(fruitFile, word, ',')); i++)
-  // {
-  //   inventory.insert(toInt(keyString),word);
-  // }
+  inventory.insert(6520, "Apples");
+  inventory.insert(3340, "Mini Bananas");
+  inventory.insert(2414, "Durian");
+  inventory.insert(2093, "Beets");
   
+  inventory.printTable();
+  
+  inventory.remove(3340);
+  inventory.insert(7782, "Starfruit");
+  inventory.insert(3323, "Dragonfruit");
   inventory.printTable();
   return 0;
 }
