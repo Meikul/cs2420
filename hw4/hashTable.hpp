@@ -7,6 +7,7 @@
 
 using namespace std;
 
+
 struct Item
 {
   Item(int key, string name);
@@ -22,12 +23,11 @@ private:
   int hash(int key);
   vector<Item> table;
   unsigned int itemCount;
-
+  Item nullItem();
 public:
   HashTable();
   bool insert(int key, string data);
-  bool insert(Item item);
-  Item* find(int key);
+  Item find(int key);
   void remove(int key);
   void rehash();
   void printTable();
