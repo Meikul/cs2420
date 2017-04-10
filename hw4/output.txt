@@ -1,0 +1,220 @@
+    After Initialization
+Key, Name, IsDeleted
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+
+    Last entry before rehash
+Key, Name, IsDeleted
+4133, apple gala, 0
+4017, apple granny smith, 0
+0, No Item, 0
+4514, alfalfa sprouts, 0
+4218, apricots, 0
+0, No Item, 0
+0, No Item, 0
+4131, apple fuji, 0
+0, No Item, 0
+0, No Item, 0
+
+    Entry causes rehash
+Key, Name, IsDeleted
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4131, apple fuji, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+3175, beans haba dry, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4218, apricots, 0
+4017, apple granny smith, 0
+0, No Item, 0
+4133, apple gala, 0
+4514, alfalfa sprouts, 0
+0, No Item, 0
+
+    All 20 inserted
+Key, Name, IsDeleted
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+3170, beans peruano, 0
+4514, alfalfa sprouts, 0
+3172, beans pinto, 0
+3173, beans lentils, 0
+0, No Item, 0
+3175, beans haba dry, 0
+0, No Item, 0
+3177, beans red, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4528, beans haba fresh, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4131, apple fuji, 0
+4218, apricots, 0
+4133, apple gala, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4065, bell pepper green, 0
+4540, beets loose, 0
+4060, broccoli, 0
+0, No Item, 0
+4069, cabbage green, 0
+0, No Item, 0
+4545, bok choy, 0
+4539, beets bunch, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4550, brussel sprouts, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4239, black berries, 0
+4556, cabbage Napa, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4088, bell pepper red, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4017, apple granny smith, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+
+   Finding Three
+4556 cabbage Napa
+4239 black berries
+4218 apricots
+
+    After removing 3 (4060, 4550, and 3177)
+Key, Name, IsDeleted
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+3170, beans peruano, 0
+4514, alfalfa sprouts, 0
+3172, beans pinto, 0
+3173, beans lentils, 0
+0, No Item, 0
+3175, beans haba dry, 0
+0, No Item, 0
+3177, beans red, 1
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4528, beans haba fresh, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4131, apple fuji, 0
+4218, apricots, 0
+4133, apple gala, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4065, bell pepper green, 0
+4540, beets loose, 0
+4060, broccoli, 1
+0, No Item, 0
+4069, cabbage green, 0
+0, No Item, 0
+4545, bok choy, 0
+4539, beets bunch, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4550, brussel sprouts, 1
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4239, black berries, 0
+4556, cabbage Napa, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4088, bell pepper red, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+4017, apple granny smith, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+0, No Item, 0
+

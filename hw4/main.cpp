@@ -21,6 +21,7 @@ int main()
 
   inventory.insert(3175,"beans haba dry");
   cout << "    Entry causes rehash" << endl;
+  inventory.printTable();
   inventory.insert(4528,"beans haba fresh");
   inventory.insert(3173,"beans lentils");
   inventory.insert(3170,"beans peruano");
@@ -42,13 +43,13 @@ int main()
   cout << "   Finding Three" << endl;
   cout << inventory.find(4556).key << " " << inventory.find(4556).name << endl;
   cout << inventory.find(4239).key << " " << inventory.find(4239).name << endl;
-  cout << inventory.find(4218).key << " " << inventory.find(4218).name << endl;
+  cout << inventory.find(4218).key << " " << inventory.find(4218).name << endl << endl;
 
 
   inventory.remove(4060);
   inventory.remove(4550);
   inventory.remove(3177);
-  cout << "    After removing 3" << endl;
+  cout << "    After removing 3 (4060, 4550, and 3177)" << endl;
   inventory.printTable();
 
 
